@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+}
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-image: radial-gradient(
+    rgba(255, 255, 255, 0.4) 9%,
+    transparent 9%
+  ); */
+  background-position: 0% 0%;
+  background-size: 20px 20px;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+.wrapper {
+  height: 125px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  position: relative;
+  color: transparent;
+  user-select: none;
+}
+.logo::before {
+  content: "";
+  position: absolute;
+  top: 45%;
+  height: 5px;
+  left: -10%;
+  right: -20%;
+  background: #ffffff;
+  border-radius: 0 2px 0 100%;
+  z-index: 1;
+  transform: rotateX(-12deg) rotateY(20deg);
+}
+
+.mask {
+  display: block;
+  position: absolute;
+  top: 0;
+  height: 50%;
+  overflow: hidden;
+  color: #ffffff;
+  padding: 0 10px;
+  transform: rotateX(-10deg) rotateY(20deg) translateY(-8px);
+}
+.mask span {
+  display: block;
+  transform: rotateX(10deg) rotateY(20deg) translateY(-13%);
+}
+
+.mask + .mask {
+  top: 49.9%;
+  height: 50%;
+  transform: rotateX(-10deg) rotateY(20deg);
+}
+.mask + .mask span {
+  transform: rotateX(10deg) rotateY(20deg) translateY(-35%) translateX(10px);
+}
