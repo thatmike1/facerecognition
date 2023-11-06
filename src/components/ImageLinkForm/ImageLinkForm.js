@@ -1,6 +1,6 @@
 import React from "react";
 
-const ImageLinkForm = ({ onInputChange, onBtnSubmit }) => {
+const ImageLinkForm = ({ onInputChange, onButtonSubmit }) => {
   return (
     <div>
       {/* <p className="text-lg subpixel-antialiased ">
@@ -15,7 +15,7 @@ const ImageLinkForm = ({ onInputChange, onBtnSubmit }) => {
           placeholder="This is the Facinator, it will detect faces in pictures. Try git out!"
         ></input>
         <button
-          onClick={onBtnSubmit}
+          onClick={onButtonSubmit}
           className="w-auto text-lg subpixel-antialiased rounded-r-lg p-2 bg-blue-500 text-white font-medium"
         >
           Detect

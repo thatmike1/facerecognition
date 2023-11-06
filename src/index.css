@@ -11,8 +11,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* resulting css */
   height: 100vh;
-  background: #253d2d;
-  background-image: radial-gradient(
+  background: rgb(17, 24, 39);
+  /* background-image: radial-gradient(
       at 100% 57%,
       hsl(38, 83%, 53%) 0px,
       transparent 50%
@@ -20,7 +20,7 @@ body {
     radial-gradient(at 60% 45%, hsl(212, 33%, 82%) 0px, transparent 50%),
     radial-gradient(at 30% 6%, hsl(299, 93%, 52%) 0px, transparent 50%),
     radial-gradient(at 26% 7%, hsl(56, 94%, 59%) 0px, transparent 50%),
-    radial-gradient(at 56% 71%, hsl(254, 94%, 41%) 0px, transparent 50%);
+    radial-gradient(at 56% 71%, hsl(254, 94%, 41%) 0px, transparent 50%); */
 }
 
 code {
@@ -49,4 +49,8 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.rounded-lgl {
+  border-radius: 10px;
 }
